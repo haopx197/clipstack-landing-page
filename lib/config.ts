@@ -6,7 +6,7 @@ export const BRAND_COLOR = "#ffb11a";
 
 export const APP_VERSION = "1.0.0";
 
-export const APP_TAGLINE = "Clipboard history for macOS";
+export const APP_TAGLINE = "Clipboard Manager for macOS";
 
 export const APP_DESCRIPTION =
     "Free, native clipboard manager for Mac. Pin, paste with a keyboard shortcut, and never lose what you copied. Built for Apple Silicon and Intel.";

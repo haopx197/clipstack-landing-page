@@ -1,27 +1,14 @@
-import type { Metadata } from "next";
+import Image from "next/image";
 
-import {
-    APP_DESCRIPTION,
-    APP_NAME,
-    APP_TAGLINE,
-    INSTALL_COMMAND,
-    MIN_MACOS_NAME,
-    MIN_MACOS_VERSION,
-} from "@/lib/config";
+import { APP_NAME, APP_TAGLINE, INSTALL_COMMAND, MIN_MACOS_NAME, MIN_MACOS_VERSION } from "@/lib/config";
 import { CommandBox, Flex, IconKeyboard, IconLogo, IconPin, IconShield, IconStack, Typography } from "./_components";
 import s from "./page.module.css";
-
-export const metadata: Metadata = {
-    title: `Download ${APP_NAME}`,
-    description: APP_DESCRIPTION,
-    alternates: { canonical: "/" },
-};
 
 const features = [
     {
         icon: <IconKeyboard />,
         title: "Keyboard first",
-        body: "Press ⌘⇧V to open history and paste in one click. Search by typing, jump to the top ten with ⌘1–⌘0.",
+        body: "Open your clipboard history with a global shortcut and paste in one click.",
     },
     {
         icon: <IconStack />,
@@ -31,7 +18,7 @@ const features = [
     {
         icon: <IconPin />,
         title: "Pin the ones you keep",
-        body: "Pin the snippets and links you use daily — they stay on top. Everything else rolls off automatically, no cleanup needed.",
+        body: "Pin the snippets and links you use daily — they stay on top. Everything else rolls off automatically.",
     },
     {
         icon: <IconShield />,
@@ -50,7 +37,7 @@ export default function Home() {
                         {APP_NAME}
                     </Typography>
                 </Flex>
-                <Typography variant="subtitle" align="center" bottom={16} color="var(--color-text-strong)">
+                <Typography variant="subtitle" as="h2" align="center" bottom={16} color="var(--color-text-strong)">
                     {APP_TAGLINE}
                 </Typography>
                 <Flex align="center" justify="center">
@@ -82,6 +69,17 @@ export default function Home() {
                             <Typography top={8}>{feature.body}</Typography>
                         </div>
                     ))}
+                </div>
+                <div className={s.hero}>
+                    <Image
+                        src="/hero.png"
+                        alt={`${APP_NAME} clipboard manager for macOS — clipboard history window showing pinned snippets, copied text, images, and files with keyboard shortcuts`}
+                        width={2397}
+                        height={2649}
+                        priority
+                        sizes="(max-width: 768px) 100vw, 900px"
+                        className={s.heroImage}
+                    />
                 </div>
             </main>
             <footer className={s.footer}>
