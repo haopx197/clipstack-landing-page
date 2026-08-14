@@ -1,4 +1,4 @@
-export const SITE_URL = "https://clipstack.vercel.app";
+export const SITE_URL = "https://clipboardmanager.vercel.app";
 
 export const APP_NAME = "ClipStack";
 
