@@ -68,6 +68,7 @@ Các icon SVG (`IconLogo`, `IconKeyboard`, `IconStack`, `IconPin`, `IconShield`)
 ```
 app/
 ├── _components/              # UI components (folder có underscore = không phải route)
+│   ├── button/
 │   ├── button-icon/
 │   ├── command-box/          # copy-to-clipboard install command
 │   ├── flex/
@@ -77,6 +78,7 @@ app/
 ├── layout.tsx                # metadata + JSON-LD
 ├── page.tsx                  # landing content
 ├── page.module.css
+├── not-found.tsx             # 404
 ├── icon.tsx                  # favicon 64×64 (edge runtime)
 ├── apple-icon.tsx            # apple touch icon 180×180
 ├── manifest.ts               # PWA manifest

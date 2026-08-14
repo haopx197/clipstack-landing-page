@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #e2a843;
+    --color-primary: #ffb11a;
     --color-primary-dim: #745626;
     --color-text: #ffd79a;
     --color-text-strong: #fff;
@@ -37,4 +37,8 @@ body {
 
 button {
     font-family: inherit;
+}
+
+a {
+    text-decoration: none;
 }

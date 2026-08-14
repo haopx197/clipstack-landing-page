@@ -1,4 +1,4 @@
-export function IconTerminal({ color = "#0a7777" }) {
+export function IconTerminal({ color = "var(--color-primary)" }) {
     return (
         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg" color={color}>
             <style>{`@keyframes blink{0%,100%{opacity:0}50%{opacity:1}}`}</style>
