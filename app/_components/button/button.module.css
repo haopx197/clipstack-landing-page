@@ -1,27 +1,49 @@
 .button {
+    position: relative;
     outline: 0;
     border: 0;
     white-space: nowrap;
     text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: 1.4px;
+    font-weight: 500;
     cursor: pointer;
     overflow: hidden;
     height: 50px;
-    padding-inline: 24px;
-    display: flex;
+    padding-inline: 28px;
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
     perspective: 1280px;
-    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+    transition:
+        transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+        box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     background-color: var(--color-primary);
-    color: var(--color-text-strong);
+    color: var(--color-bg-code);
+    font-family: var(--font-google-sans);
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(255, 177, 26, 0.25);
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 177, 26, 0.4);
+}
+
+.button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 177, 26, 0.3);
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--color-text-strong);
+    outline-offset: 2px;
 }
 
 .content {
     transition:
         transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
         opacity 0.45s cubic-bezier(0.23, 1, 0.32, 1);
-    padding-top: 2px;
+    backface-visibility: hidden;
 }
 
 .button:hover .content {
@@ -72,7 +94,7 @@
     transition:
         transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
         opacity 0.45s cubic-bezier(0.23, 1, 0.32, 1);
-    padding-top: 2px;
+    backface-visibility: hidden;
 }
 
 .button:hover .flipInner {

@@ -20,7 +20,7 @@
 }
 
 .hero {
-    margin: 48px auto 0;
+    margin: 0 auto;
     max-width: 560px;
 }
 
@@ -28,6 +28,8 @@
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 40px;
+    border: 1px solid var(--color-primary);
 }
 
 .features {

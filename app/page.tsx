@@ -1,7 +1,17 @@
 import Image from "next/image";
 
 import { APP_NAME, APP_TAGLINE, INSTALL_COMMAND, MIN_MACOS_NAME, MIN_MACOS_VERSION } from "@/lib/config";
-import { CommandBox, Flex, IconKeyboard, IconLogo, IconPin, IconShield, IconStack, Typography } from "./_components";
+import {
+    Button,
+    CommandBox,
+    Flex,
+    IconKeyboard,
+    IconLogo,
+    IconPin,
+    IconShield,
+    IconStack,
+    Typography,
+} from "./_components";
 import s from "./page.module.css";
 
 const features = [
@@ -47,15 +57,17 @@ export default function Home() {
                         </Typography>
                     </div>
                 </Flex>
+                <div id="install">
+                    <Typography variant="heading" align="center" top={48} bottom={16}>
+                        🚀 Install {APP_NAME}
+                    </Typography>
+                    <Typography bottom={8} variant="bodyStrong">
+                        Paste in Terminal. Auto-detects Intel or Apple Silicon. No security prompts.
+                    </Typography>
+                    <CommandBox command={INSTALL_COMMAND} ariaLabel={`Install ${APP_NAME}`} />
+                </div>
                 <Typography variant="heading" align="center" top={48} bottom={16}>
-                    🚀 Install {APP_NAME}
-                </Typography>
-                <Typography bottom={8} variant="bodyStrong">
-                    Paste in Terminal. Auto-detects Intel or Apple Silicon. No security prompts.
-                </Typography>
-                <CommandBox command={INSTALL_COMMAND} ariaLabel={`Install ${APP_NAME}`} />
-                <Typography variant="heading" align="center" top={48} bottom={16}>
-                    🔧 What Does {APP_NAME} Do?
+                    🔧 Why {APP_NAME}?
                 </Typography>
                 <div className={s.features}>
                     {features.map((feature) => (
@@ -70,6 +82,9 @@ export default function Home() {
                         </div>
                     ))}
                 </div>
+                <Typography variant="heading" align="center" top={48} bottom={16}>
+                    📸 Screenshot
+                </Typography>
                 <div className={s.hero}>
                     <Image
                         src="/hero.png"
@@ -81,6 +96,15 @@ export default function Home() {
                         className={s.heroImage}
                     />
                 </div>
+                <Typography variant="heading" align="center" top={48} bottom={16}>
+                    🎯 Ready to try {APP_NAME}?
+                </Typography>
+                <Typography align="center" bottom={24}>
+                    One command. No sign-up. Runs entirely on your Mac.
+                </Typography>
+                <Flex align="center" justify="center">
+                    <Button href="#install">Install ↑</Button>
+                </Flex>
             </main>
             <footer className={s.footer}>
                 <Typography as="span" color="var(--color-primary)">
