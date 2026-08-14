@@ -1,0 +1,40 @@
+:root {
+    --color-primary: #e2a843;
+    --color-primary-dim: #745626;
+    --color-text: #ffd79a;
+    --color-text-strong: #fff;
+    --color-bg: #2e2a24;
+    --color-bg-code: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:
+        var(--font-google-sans),
+        -apple-system,
+        BlinkMacSystemFont,
+        "SF Pro Text",
+        "Segoe UI",
+        Roboto,
+        sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--color-text);
+    background: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+button {
+    font-family: inherit;
+}
