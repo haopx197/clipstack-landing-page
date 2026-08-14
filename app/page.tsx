@@ -8,16 +8,7 @@ import {
     MIN_MACOS_NAME,
     MIN_MACOS_VERSION,
 } from "@/lib/config";
-import {
-    CommandBox,
-    Flex,
-    IconKeyboard,
-    IconLogo,
-    IconPin,
-    IconShield,
-    IconStack,
-    Typography,
-} from "./_components";
+import { CommandBox, Flex, IconKeyboard, IconLogo, IconPin, IconShield, IconStack, Typography } from "./_components";
 import s from "./page.module.css";
 
 export const metadata: Metadata = {
@@ -64,7 +55,7 @@ export default function Home() {
                 </Typography>
                 <Flex align="center" justify="center">
                     <div className={s.versionNotice}>
-                        <Typography variant="notice">
+                        <Typography align="center" variant="notice">
                             {APP_NAME} supports macOS {MIN_MACOS_VERSION} {MIN_MACOS_NAME} or later.
                         </Typography>
                     </div>
@@ -76,7 +67,7 @@ export default function Home() {
                     Paste in Terminal. Auto-detects Intel or Apple Silicon. No security prompts.
                 </Typography>
                 <CommandBox command={INSTALL_COMMAND} ariaLabel={`Install ${APP_NAME}`} />
-                <Typography variant="heading" align="center" top={48} bottom={48}>
+                <Typography variant="heading" align="center" top={48} bottom={16}>
                     🔧 What Does {APP_NAME} Do?
                 </Typography>
                 <div className={s.features}>
@@ -95,7 +86,7 @@ export default function Home() {
             </main>
             <footer className={s.footer}>
                 <Typography as="span" color="var(--color-primary)">
-                    © {new Date().getFullYear()} {APP_NAME}
+                    © 2026 {APP_NAME}. All rights reserved.
                 </Typography>
             </footer>
         </div>
