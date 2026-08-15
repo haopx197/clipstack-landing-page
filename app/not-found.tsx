@@ -13,7 +13,7 @@ export default function NotFound() {
                         404
                     </Typography>
                 </Flex>
-                <Typography variant="subtitle" align="center" bottom={24} color="var(--color-text-strong)">
+                <Typography variant="subtitle" align="center" bottom={24} color="var(--color-white)">
                     This page could not be found.
                 </Typography>
                 <Flex align="center" justify="center">

@@ -18,7 +18,7 @@ const features = [
     {
         icon: <IconKeyboard />,
         title: "Keyboard first",
-        body: "Cmd+Shift+V opens history under the menu bar. Click an item — ClipStack pastes it into the field you were just typing in.",
+        body: "Cmd+Shift+V opens history next to your cursor, flipping at screen edges. Drag the top strip to move it; next hotkey snaps it back. Click an item to paste into your last field.",
     },
     {
         icon: <IconStack />,
@@ -47,7 +47,7 @@ export default function Home() {
                         {APP_NAME}
                     </Typography>
                 </Flex>
-                <Typography variant="subtitle" as="h2" align="center" bottom={16} color="var(--color-text-strong)">
+                <Typography variant="subtitle" as="h2" align="center" bottom={16} color="var(--color-white)">
                     {APP_TAGLINE}
                 </Typography>
                 <Flex align="center" justify="center">
@@ -90,7 +90,7 @@ export default function Home() {
                         src="/hero.png"
                         alt={`${APP_NAME} clipboard manager for macOS — clipboard history window showing pinned snippets, copied text, images, and files with keyboard shortcuts`}
                         width={1600}
-                        height={1692}
+                        height={1989}
                         priority
                         quality={100}
                         sizes="(max-width: 768px) 100vw, 480px"
@@ -104,7 +104,7 @@ export default function Home() {
                     One command. No sign-up. Runs entirely on your Mac.
                 </Typography>
                 <Flex align="center" justify="center">
-                    <Button href="#install">Install ↑</Button>
+                    <Button href="#install">Install 🚀</Button>
                 </Flex>
             </main>
             <footer className={s.footer}>

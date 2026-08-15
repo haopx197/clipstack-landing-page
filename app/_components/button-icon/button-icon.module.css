@@ -3,7 +3,7 @@
     border: 0;
     white-space: nowrap;
     overflow: hidden;
-    background-color: var(--color-bg-code);
+    background-color: var(--color-black);
     width: 48px;
     height: 48px;
     cursor: pointer;

@@ -8,8 +8,9 @@
     font-weight: 500;
     cursor: pointer;
     overflow: hidden;
-    height: 50px;
-    padding-inline: 28px;
+    height: 44px;
+    padding-inline: 24px;
+    border-radius: 2px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +19,7 @@
         transform 0.3s cubic-bezier(0.23, 1, 0.32, 1),
         box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
     background-color: var(--color-primary);
-    color: var(--color-bg-code);
+    color: var(--color-black);
     font-family: var(--font-google-sans);
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(255, 177, 26, 0.25);
@@ -35,7 +36,7 @@
 }
 
 .button:focus-visible {
-    outline: 2px solid var(--color-text-strong);
+    outline: 2px solid var(--color-white);
     outline-offset: 2px;
 }
 
@@ -57,7 +58,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    background-color: var(--color-text-strong);
+    background-color: var(--color-white);
     color: var(--color-primary);
     display: flex;
     align-items: center;

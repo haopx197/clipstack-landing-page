@@ -6,7 +6,7 @@
     height: 48px;
     padding-left: 16px;
     border-radius: 4px;
-    background-color: var(--color-bg-code);
+    background-color: var(--color-black);
     overflow: hidden;
 }
 
@@ -20,7 +20,7 @@
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    color: var(--color-text-strong);
+    color: var(--color-white);
     font-weight: 600;
     letter-spacing: -0.2px;
 }
