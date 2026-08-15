@@ -18,22 +18,22 @@ const features = [
     {
         icon: <IconKeyboard />,
         title: "Keyboard first",
-        body: "Open your clipboard history with a global shortcut and paste in one click.",
+        body: "Cmd+Shift+V opens history under the menu bar. Click an item — ClipStack pastes it into the field you were just typing in.",
     },
     {
         icon: <IconStack />,
-        title: "Text, images, files",
-        body: "Copy anything — code, screenshots, PDFs, folders, rich text. Images and files preview inline so you find the right one at a glance.",
+        title: "Text and screenshots",
+        body: "Copies text and images. Cmd+Shift+3/4/5 screenshots land in your clipboard history automatically — no more Desktop clutter.",
     },
     {
         icon: <IconPin />,
-        title: "Pin the ones you keep",
-        body: "Pin the snippets and links you use daily — they stay on top. Everything else rolls off automatically.",
+        title: "Pin what matters",
+        body: "Pin the snippets and links you use daily — they stay on top. The rest rolls off after 200 items.",
     },
     {
         icon: <IconShield />,
-        title: "Native and private",
-        body: "Built natively for macOS — light on CPU and battery. Everything stays on your Mac. No cloud, no accounts, no telemetry.",
+        title: "Local and private",
+        body: "Native menu-bar app for Apple Silicon and Intel. Everything stays on your Mac. No cloud, no accounts, no telemetry.",
     },
 ];
 
@@ -89,10 +89,11 @@ export default function Home() {
                     <Image
                         src="/hero.png"
                         alt={`${APP_NAME} clipboard manager for macOS — clipboard history window showing pinned snippets, copied text, images, and files with keyboard shortcuts`}
-                        width={2397}
-                        height={2649}
+                        width={1600}
+                        height={1692}
                         priority
-                        sizes="(max-width: 768px) 100vw, 900px"
+                        quality={100}
+                        sizes="(max-width: 768px) 100vw, 480px"
                         className={s.heroImage}
                     />
                 </div>

@@ -21,13 +21,14 @@
 
 .hero {
     margin: 0 auto;
-    max-width: 560px;
+    max-width: 480px;
 }
 
 .heroImage {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 12px;
     border: 1px solid var(--color-primary);
 }
 
