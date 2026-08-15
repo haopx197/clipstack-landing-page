@@ -62,7 +62,7 @@ export default function Home() {
                         🚀 Install {APP_NAME}
                     </Typography>
                     <Typography bottom={8} variant="bodyStrong">
-                        Paste in Terminal. Auto-detects Intel or Apple Silicon. No security prompts.
+                        Paste in Terminal. Auto-detects Intel or Apple Silicon. Safe to re-run — auto-upgrades to the latest version.
                     </Typography>
                     <CommandBox command={INSTALL_COMMAND} ariaLabel={`Install ${APP_NAME}`} />
                 </div>
